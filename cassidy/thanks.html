@@ -68,19 +68,41 @@
 
     <!-- Page Content -->
     <div class="container">
-
+	
         <!-- Portfolio Item Row -->
         <div class="row">
-
-            <div class="col-md-8">
-                <img class="img-responsive" src="http://placehold.it/750x500" alt="">
-            </div>
-
-            <div class="col-md-4">
-                <h3>Cassidy Huscher</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-                <h3>git gud</h3>
-            </div>
+			<div class="col-sm-6 col-sm-offset-3">
+			<div class="alert alert-success" role="alert">
+			  <strong>Thanks!</strong> I'll respond asdlkfjasldkfjasldjfsd
+			</div>
+				<div class="well" style="margin-top: 10%;">
+					<h3>Send me a message</h3>
+					
+					<form action="//formspree.io/nicole.maneth@gmail.com"  method="POST"role="form" id="contactForm" data-toggle="validator" class="shake">
+						<div class="row">
+							<div class="form-group col-sm-6">
+								<label for="name" class="h4">Name</label>
+								<input name="name" type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
+								<div class="help-block with-errors"></div>
+							</div>
+							<div class="form-group col-sm-6">
+								<label for="email" class="h4">Email</label>
+								<input name="_replyto" type="email" class="form-control" id="email" placeholder="Enter email" required>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="message" class="h4 ">Message</label>
+							<textarea type="text" name="body" id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+							<div class="help-block with-errors"></div>
+						</div>
+						<button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+						<div id="msgSubmit" class="h3 text-center hidden"></div>
+						<div class="clearfix"></div>
+						<input type="hidden" name="_next" value="thanks.html" />
+					</form>
+				</div>
+			</div>
 
         </div>
         <!-- /.row -->
